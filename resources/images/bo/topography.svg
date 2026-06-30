@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+    <!-- Fond blanc (optionnel, tu peux supprimer si ton fond vient du site) -->
+
+
+    <!-- Veines principales -->
+    <g fill="none" stroke="#8e8888" stroke-width="1.6" stroke-opacity="0.07">
+        <path d="M 40 -60 
+                 C 45 10, 35 80, 50 150 
+                 C 65 220, 55 260, 50 360"></path>
+        <path d="M 80 -60 
+                 C 85 10, 75 70, 90 130
+                 C 105 190, 95 240, 90 360"></path>
+        <path d="M 120 -60 
+                 C 130 20, 110 90, 135 150
+                 C 155 210, 145 250, 140 360"></path>
+        <path d="M 160 -60 
+                 C 170 15, 155 80, 175 145
+                 C 195 210, 185 250, 180 360"></path>
+        <path d="M 200 -60 
+                 C 210 10, 195 80, 215 145
+                 C 235 210, 225 255, 220 360"></path>
+        <path d="M 240 -60 
+                 C 250 15, 235 80, 255 145
+                 C 275 210, 265 255, 260 360"></path>
+    </g>
+
+    <!-- Petites veines secondaires -->
+    <g fill="none" stroke="#8e8888" stroke-width="1.2" stroke-opacity="0.06">
+        <path d="M 60 -40 
+                 C 70 10, 55 60, 70 120
+                 C 85 180, 75 230, 70 340"></path>
+        <path d="M 100 -40 
+                 C 110 5, 95 55, 110 115
+                 C 125 175, 115 225, 110 340"></path>
+        <path d="M 180 -40 
+                 C 190 10, 175 60, 190 120
+                 C 205 180, 195 230, 190 340"></path>
+        <path d="M 220 -40 
+                 C 230 5, 215 55, 230 115
+                 C 245 175, 235 225, 230 340"></path>
+    </g>
+
+    <!-- "Nœuds" de bois très légers -->
+    <g fill="none" stroke="#8e8888" stroke-width="1.2" stroke-opacity="0.06">
+        <ellipse cx="90" cy="90" rx="12" ry="24"></ellipse>
+        <ellipse cx="190" cy="60" rx="10" ry="20"></ellipse>
+        <ellipse cx="150" cy="200" rx="14" ry="26"></ellipse>
+        <ellipse cx="230" cy="190" rx="10" ry="22"></ellipse>
+    </g>
+</svg>

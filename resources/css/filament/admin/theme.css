@@ -1,0 +1,112 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+
+@source '../../../../app/Filament';
+@source '../../../../app/Livewire';
+@source '../../../../resources/views/filament';
+@source '../../../../resources/views/livewire';
+
+:root {
+    /* COLORS:START */
+    --color-primary-50: #ECF1F8;
+    --color-primary-100: #DAE3F1;
+    --color-primary-200: #B5C6E3;
+    --color-primary-300: #8FAAD6;
+    --color-primary-400: #6A8DC8;
+    --color-primary-500: #436EB5;
+    --color-primary-600: #375A95;
+    --color-primary-700: #294470;
+    --color-primary-800: #1C2D4A;
+    --color-primary-900: #0E1725;
+    --color-secondary-50: #EAF6FB;
+    --color-secondary-100: #D4EEF7;
+    --color-secondary-200: #A9DCEF;
+    --color-secondary-300: #7ECBE7;
+    --color-secondary-400: #54B9DE;
+    --color-secondary-500: #51B8DE;
+    --color-secondary-600: #2186AB;
+    --color-secondary-700: #186581;
+    --color-secondary-800: #104356;
+    --color-secondary-900: #08222B;
+    --color-tertiary-50: #EEEFF7;
+    --color-tertiary-100: #DCDEEF;
+    --color-tertiary-200: #BABDDE;
+    --color-tertiary-300: #979CCE;
+    --color-tertiary-400: #757BBD;
+    --color-tertiary-500: #A5A9D4;
+    --color-tertiary-600: #42488A;
+    --color-tertiary-700: #313668;
+    --color-tertiary-800: #212445;
+    --color-tertiary-900: #101223;
+    --color-success-50: #E8FDF6;
+    --color-success-100: #D0FBED;
+    --color-success-200: #A1F7DA;
+    --color-success-300: #72F3C8;
+    --color-success-400: #43EFB6;
+    --color-success-500: #10B981;
+    --color-success-600: #10BC83;
+    --color-success-700: #0C8D62;
+    --color-success-800: #085E41;
+    --color-success-900: #042F21;
+    --color-error-50: #FDE8E8;
+    --color-error-100: #FBD0D0;
+    --color-error-200: #F7A1A1;
+    --color-error-300: #F37272;
+    --color-error-400: #EF4343;
+    --color-error-500: #EF4444;
+    --color-error-600: #BC1010;
+    --color-error-700: #8D0C0C;
+    --color-error-800: #5E0808;
+    --color-error-900: #2F0404;
+    --color-warning-50: #FEF5E7;
+    --color-warning-100: #FDECCE;
+    --color-warning-200: #FBD89D;
+    --color-warning-300: #F9C56C;
+    --color-warning-400: #F7B13B;
+    --color-warning-500: #F59E0B;
+    --color-warning-600: #C47E08;
+    --color-warning-700: #935F06;
+    --color-warning-800: #623F04;
+    --color-warning-900: #312002;
+    --color-info-50: #E7EFFE;
+    --color-info-100: #CEE0FD;
+    --color-info-200: #9DC1FB;
+    --color-info-300: #6DA2F8;
+    --color-info-400: #3C83F6;
+    --color-info-500: #3B82F6;
+    --color-info-600: #0950C3;
+    --color-info-700: #073C92;
+    --color-info-800: #042862;
+    --color-info-900: #021431;
+    /* COLORS:END */
+}
+
+/* ===== HOOKS CSS POUR LA ZONE MAIN - PATTERN TOPOGRAPHY SVG ===== */
+.fi-main {
+    /* Pattern topography avec fond adaptatif en light mode */
+    background-image: url('../../../images/bo/topography.svg');
+    background-repeat: repeat;
+    background-size: 304px 304px;
+    background-attachment: local;
+}
+
+/* Mode sombre pour fi-main avec filtre */
+.fi-main:where(.dark, .dark *) {
+    /* Fond sombre avec le même pattern mais inversé */
+    background-image: url('../../../images/bo/topography.svg');
+    background-repeat: repeat;
+    background-size: 304px 304px;
+    background-attachment: fixed;
+    /* Filtre pour adapter le SVG au mode sombre : inversion + ajustement luminosité */
+}
+
+.fi-page-sub-navigation-sidebar-ctn {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    box-shadow: inset 0 0 4px 0 rgb(0 0 0 / 0.1);
+}
+
+.fi-page-sub-navigation-sidebar-ctn:where(.dark, .dark *) {
+    background-color: #1a1a1a;
+}
