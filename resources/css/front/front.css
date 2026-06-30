@@ -106,6 +106,8 @@
   /* color-schema-console-generated-end */
 }
 
+@import "./sp/filament-static-pages.css";
+
 /* Configuration de base */
 html {
     scroll-behavior: smooth;
