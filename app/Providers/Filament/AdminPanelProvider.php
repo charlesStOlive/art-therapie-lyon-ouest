@@ -31,6 +31,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->login()
+            ->passwordReset()
             ->maxContentWidth(Width::Full)
             ->plugin(FilamentStaticPagesPlugin::make()->constructionWidget())
             ->colors([
